@@ -1,0 +1,83 @@
+.logo-nav {
+    border-style: none;
+    max-height: 50px;
+    margin-left: 1.4rem;
+    margin-top: .1rem;
+}
+
+/* label color */
+.input-field label {
+    color: #ffa000;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #ffa000;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #ffa000;
+  }
+ 
+ 
+ 
+ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+   border-bottom: 1px solid #ffa000;
+   -webkit-box-shadow: 0 1px 0 0 #ffa000;
+   box-shadow: 0 1px 0 0 #ffa000;
+ }
+
+
+ nav ul a:hover {
+  background-color: #e65100 !important;
+}
+ 
+.sidenav li > a:hover {
+  background-color: #0D47A1 !important;
+}
+
+.nav-app{
+  height: 54px;
+    line-height: 54px;
+}
+
+
+
+
+nav a.sidenav-trigger i, nav a.sidenav-trigger, nav .nav-wrapper i {
+  height: 54px;
+  line-height: 54px;
+}
+
+
+header, main, footer {
+  padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+
+.sidenav {
+  top: 54px !important;
+  width: 250px !important;
+}
+      
+ 
+ 

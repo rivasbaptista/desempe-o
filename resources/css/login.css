@@ -1,0 +1,106 @@
+/* label color */
+.input-field label {
+    color: #ffa000;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #ffa000;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #ffa000;
+    box-shadow: 0 1px 0 0 #ffa000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #ffa000;
+  }
+ 
+ 
+ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+   border-bottom: 1px solid #ffa000;
+   -webkit-box-shadow: 0 1px 0 0 #ffa000;
+   box-shadow: 0 1px 0 0 #ffa000;
+ }
+ 
+ 
+ 
+ 
+ .mensaje{
+   margin-top: 20px;
+ }
+ 
+
+
+ .logo-login{
+  border-style: none;
+  max-height: 111px;
+  margin-left: 13.49rem;
+ }
+ 
+ /* .back {
+   background-image: url('../images/fondo_login.jpg');
+       background-size:cover;
+       
+ } */
+ 
+ .fondo-form {
+   min-height: 626px !important;
+   width: 40% !important;
+   height: -webkit-fill-available;
+ 
+ }
+ 
+ .no-bottom {
+   margin-bottom: 0px !important;
+ }
+ 
+ 
+ 
+ .box span{
+   text-transform: uppercase;
+   display: block;
+ }
+ 
+ .text1{
+   font-size: 30px;
+   font-weight: 700;
+   letter-spacing: 8px;
+   position: relative;
+   animation: text 3s 1;
+ 
+ }
+ 
+ .text2{
+   font-size: 30px;
+ }
+ 
+ 
+ @keyframes text {
+   0%{
+       margin-bottom: -40px;
+       color: #ffa000;
+ 
+   }
+ 
+   30%{
+       letter-spacing: 25px;
+       margin-bottom: -40%;
+   }
+ 
+   85%{
+       letter-spacing: 8px;
+       margin-bottom: -40px;
+   }
+ }
+ 
