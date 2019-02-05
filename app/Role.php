@@ -7,11 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends Model
 {
     
+    protected $fillable = ['slug', 'name'];
 
-    public function users()
-{
-    return $this
-        ->belongsToMany('App\User')
-        ->withTimestamps();
-}
+    public function permisos(){
+        return $this->belongsToMany(Permisos::class, 'roles_permisos');
+    }
 }

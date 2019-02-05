@@ -12,9 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    
+    return redirect()->route('login');
 });
+
 
 Auth::routes(['verify' => true, 'register' => false]);
 
-Route::get('/', 'HomeController@index')->name('home')->middleware('verified')->middleware('auth', 'role:rrhh'); //->middleware('auth', 'role:admin')
+
+Route::group(['middleware' => 'role:rrhh'], function() {
+    Route::get('/recursos-humanos', 'RecursosHumanosController@index')->name('recursos_humanos.index')->middleware('verified'); 
+ });
+
+ Route::group(['middleware' => 'role:evaluador'], function() {
+    Route::get('/evaluador', 'EvaluadoresController@index')->name('evaluador.index')->middleware('verified'); 
+ });

@@ -4,6 +4,7 @@ use Illuminate\Database\Seeder;
 use App\User;
 use App\Role;
 
+
 class UsersTableSeeder extends Seeder
 {
     /**
@@ -14,24 +15,25 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
 
-        $rrhh = Role::where('titulo', 'rrhh')->first();
-        $evaluador_operador = Role::where('titulo', 'evaluador-aprobador')->first();
+        $rrhh = Role::where('slug', 'rrhh')->first();
+        $evaluador = Role::where('slug', 'evaluador')->first();
+
 
         User::create([
-            'name' => 'José Baptista',
-            'email' => 'jbaptista@segurosaltamira.com',
+            'name' => 'Recursos Humanos',
+            'email' => 'rrhh@segurosaltamira.com',
             'password' => bcrypt('qwerty'),
             'unidad_id' => '2',
-            
+
             
         ])->roles()->attach($rrhh);
         
         User::create([
-            'name' => 'José Baptista',
-            'email' => 'baptista@segurosaltamira.com',
+            'name' => 'Evaluador',
+            'email' => 'evaluador@segurosaltamira.com',
             'password' => bcrypt('qwerty'),
             'unidad_id' => '2',
-        ])->roles()->attach($evaluador_operador);
+        ])->roles()->attach($evaluador);
         
 
 

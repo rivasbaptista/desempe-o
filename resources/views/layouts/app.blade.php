@@ -55,8 +55,8 @@
         <div class="navbar-fixed ">
             <nav class="nav-app">
               <div class="nav-wrapper blue darken-4">
-                <a href="{{ route('home') }}" data-target="slide-out" class="sidenav-trigger show-on-large "><i class="material-icons">menu</i></a>
-                <a href="{{ route('home') }}" class="brand-logo"><img src="{{ url('images/logo.png') }}" class="logo-nav" alt=""></a>
+                <a href="" data-target="slide-out" class="sidenav-trigger show-on-large "><i class="material-icons">menu</i></a>
+                <a href="" class="brand-logo"><img src="{{ url('images/logo.png') }}" class="logo-nav" alt=""></a>
                 <ul class="right hide-on-med-and-down">
                 @guest
                     <li><a href="{{ route('login') }}">login</a></li>
